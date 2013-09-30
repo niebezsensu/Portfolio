@@ -28,6 +28,8 @@ textarea {
 
 /* typography */
 
+
+
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
 }
@@ -40,6 +42,7 @@ h1 {
 }
 
 h2 {
+
   font-size: 1.2em;
   letter-spacing: -1px;
   margin-bottom: 30px;
@@ -52,6 +55,8 @@ p {
   font-size: 1.1em;
   line-height: 1.7em;
 }
+
+
 
 /* header */
 
@@ -95,4 +100,32 @@ footer {
       margin-left: 10px;
     }
   }
+}
+
+#links {
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    padding-top: 10px;
+    list-style: none;
+    text-align: center;
+    z-index: 99999;
+}
+
+#links li {
+    display: inline;
+    padding: 0 5px;
+}
+
+#links li label {
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+
+#links li.active label {
+    background-color: white;
 }
